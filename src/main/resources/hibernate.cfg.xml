@@ -4,11 +4,13 @@
 		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+<!--         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
         <property name="hibernate.connection.password">RENOVAR@2013</property>
         <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=gestaoAcademica</property>
         <property name="hibernate.connection.username">sa</property>
         <property name="hibernate.default_schema">dbo</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property> -->
+        <mapping class="br.com.mario.gestaoacademica.model.Docente" />
+	    <mapping class="br.com.mario.gestaoacademica.model.Projeto" />
     </session-factory>
 </hibernate-configuration>
